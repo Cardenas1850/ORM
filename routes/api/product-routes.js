@@ -142,7 +142,7 @@ router.delete("/:id", (req, res) => {
   })
   .then((data) => {
     if (!data[0]) {
-      res.status(404).json({message: "Product could not be found"});
+      res.status(404).json({message: "Category could not be found"});
       return;
     }
     res.json(data);
