@@ -1,5 +1,4 @@
 const router = require("express").Router();
-const { restart } = require("nodemon");
 const { Category, Product } = require("../../models");
 
 // The `/api/categories` endpoint
@@ -11,7 +10,7 @@ router.get("/", (req, res) => {
     attributes: ["id", "category_name"],
     include: {
             model: Product,
-            attributes: ["category_id", "product_name", "stock", "price"],
+            attributes: ["category_id", "id", "product_name", "stock", "price"],
           },
 
   })
