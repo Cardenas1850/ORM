@@ -1,6 +1,5 @@
 # E-commerce Back End Starter Code
 ![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
-A fully functional backend application to store and categorize products that can be sold
 <h2 id='contents'> Table of Contents </h2>
 
 - [Description](#description)
@@ -16,7 +15,7 @@ A fully functional backend application to store and categorize products that can
 - [Questions](#questions)
 <h2 id='description'> Description </h2>
 
-This is the back end code for a pre-made e-commerce site
+A fully functional backend application to store and categorize products that can be sold
 
 <p style='text-align: right;'><a href='#title'>Back to top</a></p>
 
