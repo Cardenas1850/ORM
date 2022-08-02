@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
   Product.findAll({
-    attributes: ["product_name", "id", "category_id", "stock", "price"],
+    attributes: ["id", "product_name", "price", "stock", "category_id"],
     include: [
       {
       model: Category,
@@ -50,6 +50,7 @@ router.get("/:id", (req, res) => {
       .then((data) => {
         if (!data) {
           res.status(404).json ({message: "Product not found."});
+          return;
         }
         res.json(data);
       })
@@ -128,7 +129,6 @@ router.put("/:id", (req, res) => {
     })
     .then((updatedProductTags) => res.json(updatedProductTags))
     .catch((err) => {
-      // console.log(err);
       res.status(400).json(err);
     });
 });

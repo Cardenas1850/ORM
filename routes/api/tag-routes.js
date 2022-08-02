@@ -24,7 +24,7 @@ router.get("/:id", (req, res) => {
   // find a single tag by its `id`
   // be sure to include its associated Product data
 
-Tag.fineOne({
+Tag.findOne({
   where: {
     id: req.params.id,
   },
@@ -54,7 +54,7 @@ router.post("/", (req, res) => {
   })
   .then((data) => res.json(data))
   .catch((err) => {
-    //console.log(err);
+    console.log(err);
     res.status(400).json(err);
   });
 });
@@ -69,6 +69,7 @@ router.put("/:id", (req, res) => {
   .then((data) => {
     if (!data[0]) {
       res.status(404).json({message: "tag not found."});
+      return;
     }
     res.json(data);
   })
