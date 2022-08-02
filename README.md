@@ -17,6 +17,12 @@
 
 A fully functional backend application to store and categorize products that can be sold
 
+Categories Insomnia Testing: https://drive.google.com/file/d/1gFrJRoD4-Wga2UYocaEtzR2R8LiYUIUH/view
+
+Products Insomnia Testing: https://drive.google.com/file/d/1QlDCZZdiscYmXpBWwafcml9KpgY3zEXH/view
+
+Tags Insomnia Testing: https://drive.google.com/file/d/1Ko1GB6rDO6l6UYtyUJyXiExlo7zsdkcL/view enjoy the troubleshooting at the end 
+
 <p style='text-align: right;'><a href='#title'>Back to top</a></p>
 
 <h2 id='license'>License</h2>
